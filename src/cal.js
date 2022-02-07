@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
+
+function reducer(state,{type,payload}){
+
+}
 function Cal() {
+  const [{currentOp,previousOp,operation},dispatch] = useReducer(reducer)
   return (
 
       <div>
@@ -8,8 +17,8 @@ function Cal() {
         <div className="output">
 
 
-          <div className="previous">0</div>
-          <div className="curent">0</div>
+          <div className="previous"></div>
+          <div className="curent"></div>
 
         </div>
         <div >
